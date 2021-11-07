@@ -1,0 +1,273 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Debug (Launch) - Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Main<basic-programming-java_eeb543a1>",
+            "request": "launch",
+            "mainClass": "Eksperimen.PureTest.Main",
+            "projectName": "basic-programming-java_eeb543a1"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Main<basic-programming-java_eeb543a1>(1)",
+            "request": "launch",
+            "mainClass": "Eksperimen.postfixPrefix.Main",
+            "projectName": "basic-programming-java_eeb543a1"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-dataTypes<basic-programming-java_eeb543a1>",
+            "request": "launch",
+            "mainClass": "HRCoba2.FirstLevel.dataTypes",
+            "projectName": "basic-programming-java_eeb543a1"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-endOfFile<basic-programming-java_eeb543a1>",
+            "request": "launch",
+            "mainClass": "HRCoba2.FirstLevel.endOfFile",
+            "projectName": "basic-programming-java_eeb543a1"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-formatter<basic-programming-java_eeb543a1>",
+            "request": "launch",
+            "mainClass": "HRCoba2.FirstLevel.formatter",
+            "projectName": "basic-programming-java_eeb543a1"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-intToString<basic-programming-java_eeb543a1>",
+            "request": "launch",
+            "mainClass": "HRCoba2.FirstLevel.intToString",
+            "projectName": "basic-programming-java_eeb543a1"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-loop<basic-programming-java_eeb543a1>",
+            "request": "launch",
+            "mainClass": "HRCoba2.FirstLevel.loop",
+            "projectName": "basic-programming-java_eeb543a1"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-loop2<basic-programming-java_eeb543a1>",
+            "request": "launch",
+            "mainClass": "HRCoba2.FirstLevel.loop2",
+            "projectName": "basic-programming-java_eeb543a1"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-staticInitializerBlock<basic-programming-java_eeb543a1>",
+            "request": "launch",
+            "mainClass": "HRCoba2.FirstLevel.staticInitializerBlock",
+            "projectName": "basic-programming-java_eeb543a1"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Kakulator2If<basic-programming-java_eeb543a1>",
+            "request": "launch",
+            "mainClass": "Pemdas.UTS.Kakulator2If",
+            "projectName": "basic-programming-java_eeb543a1"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Kalkulator2Switch<basic-programming-java_eeb543a1>",
+            "request": "launch",
+            "mainClass": "Pemdas.UTS.Kalkulator2Switch",
+            "projectName": "basic-programming-java_eeb543a1"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-KalkulatorIf<basic-programming-java_eeb543a1>",
+            "request": "launch",
+            "mainClass": "Pemdas.UTS.KalkulatorIf",
+            "projectName": "basic-programming-java_eeb543a1"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-KalkulatorSwitch<basic-programming-java_eeb543a1>",
+            "request": "launch",
+            "mainClass": "Pemdas.UTS.KalkulatorSwitch",
+            "projectName": "basic-programming-java_eeb543a1"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-PredikatLulus<basic-programming-java_eeb543a1>",
+            "request": "launch",
+            "mainClass": "Pemdas.UTS.PredikatLulus",
+            "projectName": "basic-programming-java_eeb543a1"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-v1<basic-programming-java_eeb543a1>",
+            "request": "launch",
+            "mainClass": "Pemdas.tgl25.v1",
+            "projectName": "basic-programming-java_eeb543a1"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-v2<basic-programming-java_eeb543a1>",
+            "request": "launch",
+            "mainClass": "Pemdas.tgl25.v2",
+            "projectName": "basic-programming-java_eeb543a1"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-v3<basic-programming-java_eeb543a1>",
+            "request": "launch",
+            "mainClass": "Pemdas.tgl25.v3",
+            "projectName": "basic-programming-java_eeb543a1"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Main<basic-programming-java_eeb543a1>(2)",
+            "request": "launch",
+            "mainClass": "PrakPemdas.HR1.Main",
+            "projectName": "basic-programming-java_eeb543a1"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Main<basic-programming-java_eeb543a1>(3)",
+            "request": "launch",
+            "mainClass": "PrakPemdas.HR2.Main",
+            "projectName": "basic-programming-java_eeb543a1"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-getNIM<basic-programming-java_eeb543a1>",
+            "request": "launch",
+            "mainClass": "PrakPemdas.HR3.getNIM",
+            "projectName": "basic-programming-java_eeb543a1"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-hadiahGiveaway<basic-programming-java_eeb543a1>",
+            "request": "launch",
+            "mainClass": "PrakPemdas.HR3.hadiahGiveaway",
+            "projectName": "basic-programming-java_eeb543a1"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-informasiAkademik2<basic-programming-java_eeb543a1>",
+            "request": "launch",
+            "mainClass": "PrakPemdas.HR3.informasiAkademik2",
+            "projectName": "basic-programming-java_eeb543a1"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-ubjek3<basic-programming-java_eeb543a1>",
+            "request": "launch",
+            "mainClass": "PrakPemdas.HR3.ubjek3",
+            "projectName": "basic-programming-java_eeb543a1"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-ayam<basic-programming-java_eeb543a1>",
+            "request": "launch",
+            "mainClass": "PrakPemdas.HR4.ayam",
+            "projectName": "basic-programming-java_eeb543a1"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-upinBerhitung<basic-programming-java_eeb543a1>",
+            "request": "launch",
+            "mainClass": "PrakPemdas.HR4.upinBerhitung",
+            "projectName": "basic-programming-java_eeb543a1"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-upinBerhitung2<basic-programming-java_eeb543a1>",
+            "request": "launch",
+            "mainClass": "PrakPemdas.HR4.upinBerhitung2",
+            "projectName": "basic-programming-java_eeb543a1"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-investasi<basic-programming-java_eeb543a1>",
+            "request": "launch",
+            "mainClass": "PrakPemdas.HR5.investasi",
+            "projectName": "basic-programming-java_eeb543a1"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-kalkulator<basic-programming-java_eeb543a1>",
+            "request": "launch",
+            "mainClass": "PrakPemdas.HR5.kalkulator",
+            "projectName": "basic-programming-java_eeb543a1"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-squidward<basic-programming-java_eeb543a1>",
+            "request": "launch",
+            "mainClass": "PrakPemdas.HR5.squidward",
+            "projectName": "basic-programming-java_eeb543a1"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-ubjek4<basic-programming-java_eeb543a1>",
+            "request": "launch",
+            "mainClass": "PrakPemdas.HR5.ubjek4",
+            "projectName": "basic-programming-java_eeb543a1"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-buluTangkis<basic-programming-java_eeb543a1>",
+            "request": "launch",
+            "mainClass": "PrakPemdas.HR5_UTP.buluTangkis",
+            "projectName": "basic-programming-java_eeb543a1"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-hariEsok<basic-programming-java_eeb543a1>",
+            "request": "launch",
+            "mainClass": "PrakPemdas.HR5_UTP.hariEsok",
+            "projectName": "basic-programming-java_eeb543a1"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-hero<basic-programming-java_eeb543a1>",
+            "request": "launch",
+            "mainClass": "PrakPemdas.HR6.hero",
+            "projectName": "basic-programming-java_eeb543a1"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-prima<basic-programming-java_eeb543a1>",
+            "request": "launch",
+            "mainClass": "PrakPemdas.HR6.prima",
+            "projectName": "basic-programming-java_eeb543a1"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-remot<basic-programming-java_eeb543a1>",
+            "request": "launch",
+            "mainClass": "PrakPemdas.HR6.remot",
+            "projectName": "basic-programming-java_eeb543a1"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-ke9<basic-programming-java_eeb543a1>",
+            "request": "launch",
+            "mainClass": "PrakPemdas.Pertemuan.ke9",
+            "projectName": "basic-programming-java_eeb543a1"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Solution<basic-programming-java_eeb543a1>",
+            "request": "launch",
+            "mainClass": "PrakPemdas.Solution",
+            "projectName": "basic-programming-java_eeb543a1"
+        }
+    ]
+}
