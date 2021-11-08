@@ -10,13 +10,9 @@ public class krs {
         byte sks[] = new byte[5];
         byte sksTotal = 0;
 
-        System.out.print("Masukkan nama mahasiswa: ");
         nama = in.nextLine();
-        System.out.print("Masukkan NIM mahasiswa: ");
         nim = in.nextLine();
-        System.out.print("Masukkan program studi mahasiswa: ");
         prodi = in.nextLine();
-        System.out.println("Silahkan masukkan mata kuliah dan sksnya (lima mata kuliah)");
 
         for (int i = 0; i < sks.length; i++) {
             namaMatkul[i] = in.nextLine();
@@ -25,6 +21,7 @@ public class krs {
             sksTotal += sks[i];
         }
 
+        System.out.println();
         System.out.println("=====================================================");
         System.out.printf("Nama \t\t: %s\n", nama);
         System.out.printf("NIM \t\t: %s\n", nim);
