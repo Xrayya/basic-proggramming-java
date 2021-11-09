@@ -1,3 +1,8 @@
+// ===========================
+// Nama: Azhary Munir Abdillah
+// NIM: 215150400111015
+// ===========================
+
 package PrakPemdas.TugasKe7;
 
 import java.util.Scanner;
@@ -5,7 +10,7 @@ import java.util.Scanner;
 public class khs {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        String nama, nim, prodi, kodeMatkul[], namaMatkul[];
+        String nama, nim, prodi, semester, kodeMatkul[], namaMatkul[];
         byte nMatkul, sks[], sksTotal;
         float nilaiMatkul[], nilaiMatkulTotal, ip;
         sksTotal = 0;
@@ -14,6 +19,7 @@ public class khs {
         nama = in.nextLine();
         nim = in.nextLine();
         prodi = in.nextLine();
+        semester = in.nextLine();
         nMatkul = in.nextByte();
         in.nextLine();
 
@@ -24,15 +30,10 @@ public class khs {
 
         for (int i = 0; i < nMatkul; i++) {
             kodeMatkul[i] = in.nextLine();
-            // System.out.println("a");
             namaMatkul[i] = in.nextLine();
-            // System.out.println("b");
             sks[i] = in.nextByte();
-            // System.out.println("c");
             nilaiMatkul[i] = in.nextFloat();
-            // System.out.println("d");
             in.nextLine();
-            // System.out.println("e");
 
             sksTotal += sks[i];
             nilaiMatkulTotal += nilaiMatkul[i] * sks[i];
@@ -40,16 +41,12 @@ public class khs {
 
         ip = nilaiMatkulTotal / sksTotal;
 
-        // nama = "AZHARY MUNIR ABDILLAH";
-        // nim = "215150400111015";
-        // prodi = "SISTEM INFORMASI";
-
         System.out.println();
         System.out.println("================================================================================");
         System.out.printf("Nama \t\t: %s\n", nama);
         System.out.printf("NIM \t\t: %s\n", nim);
         System.out.printf("Program Studi \t: %s\n", prodi);
-        System.out.printf("Semester \t: GANJIL 2021/2022\n");
+        System.out.printf("Semester \t: %s\n", semester);
         System.out.println("--------------------------------------------------------------------------------");
         System.out.printf("%-5s %-18s %-43s %-5s %s\n", "No", "Kode Mata Kuliah", "Nama Mata Kuliah", "SKS", "Nilai");
         System.out.println("--------------------------------------------------------------------------------");
