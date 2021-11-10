@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch mainBilv21a",
+            "request": "launch",
+            "mainClass": "Pemdas.tgl8Nov.mainBilv21a",
+            "projectName": "basic-programming-java_eeb543a1"
+        },
+        {
+            "type": "java",
+            "name": "Launch mainBil21b",
+            "request": "launch",
+            "mainClass": "Pemdas.tgl8Nov.mainBil21b",
+            "projectName": "basic-programming-java_eeb543a1"
+        },
+        {
+            "type": "java",
+            "name": "Launch mainBilv11",
+            "request": "launch",
+            "mainClass": "Pemdas.tgl8Nov.mainBilv11",
+            "projectName": "basic-programming-java_eeb543a1"
+        },
+        {
+            "type": "java",
             "name": "Launch khs",
             "request": "launch",
             "mainClass": "PrakPemdas.TugasKe7.khs",
