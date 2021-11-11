@@ -26,8 +26,8 @@ public class mainBilv11 {
             System.out.print("\nMasukkan sebuah bilangan bulat: ");
             bil = in.nextInt();
             System.out.println("Ingin bermain lagi?");
-            System.out.println("(masukkan huruf ‘y’ (tanpa tanda kutip) jika setuju, atau huruf lainnya jika tidak");
-            System.out.print("setuju): ");
+            System.out.print(
+                    "(masukkan huruf ‘y’ (tanpa tanda kutip) jika setuju, atau huruf lainnya jika tidak setuju): ");
             lagi = in.next().charAt(0);
 
             jumlah += bil;

@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class mainBilv21b {
     public static void main(String[] args) {
         // ===========================
-        // Main Bilangan v1.1
+        // Main Bilangan v2.1.b
         // Oleh Azhary Munir Abdillah
         // ===========================
 
