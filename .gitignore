@@ -12,6 +12,16 @@ src/PrakPemdas/Solution.java
 !.vscode/extensions.json
 *.code-workspace
 
+### NetBeans ###
+**/nbproject/private/
+**/nbproject/Makefile-*.mk
+**/nbproject/Package-*.bash
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
 ### Java ###
 # Compiled class file
 *.class
