@@ -38,6 +38,7 @@ public class khs {
             sksTotal += sks[i];
             nilaiMatkulTotal += nilaiMatkul[i] * sks[i];
         }
+        in.close();
 
         ip = nilaiMatkulTotal / sksTotal;
 
@@ -81,7 +82,5 @@ public class khs {
         else
             System.out.println("12 sks");
         System.out.println("================================================================================");
-
-        in.close();
     }
 }
