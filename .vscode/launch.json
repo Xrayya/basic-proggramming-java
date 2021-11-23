@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch java",
+            "request": "launch",
+            "mainClass": "bullet.java",
+            "projectName": "basic-programming-java_eeb543a1"
+        },
+        {
+            "type": "java",
+            "name": "Launch fromCmdTest",
+            "request": "launch",
+            "mainClass": "Eksperimen.PureTest.fromCmdTest",
+            "projectName": "basic-programming-java_eeb543a1"
+        },
+        {
+            "type": "java",
             "name": "Launch mainBilv22b",
             "request": "launch",
             "mainClass": "Pemdas.tgl8Nov.mainBilv22b",
