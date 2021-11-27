@@ -245,14 +245,29 @@ public class SIAM {
         nimTerinput = cekNIMTerinput(nimMhs);
 
         if (nimTerinput) {
+            System.out.println("init1");
             System.out.print("Masukkan semester\t: ");
             sem = IN.next();
-            semTerinput = cekSemTerinput(nimMhs, sem);
+            System.out.println("init2");
+
+            indeksMhs = indeksMahasiswa(nimMhs);
+            indeksSem = semester(sem);
+
+            if (nilaiAngka[indeksMhs][indeksSem][0] == 0) {
+                System.out.print("Semester tidak ditemukan, ");
+                System.out.println("silahkan input data terlebih dahulu");
+                System.out.println("Saran: Pilih [2] pada menu dan input data KRS");
+                footer_bold();
+                semTerinput = false;
+                System.out.println("b");
+            } else {
+                semTerinput = true;
+                System.out.println("a");
+            }
 
             if (semTerinput) {
-                indeksMhs = indeksMahasiswa(nimMhs);
-                indeksSem = semester(sem);
 
+                System.out.println("Masukkan kode mata kuliah yang ingin diubah nilainya: ");
                 kodeMK = IN.next();
                 indeksMK = indeksMatkul(indeksMhs, indeksSem, kodeMK);
 
