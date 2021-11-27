@@ -37,34 +37,7 @@ public class SIAM {
                     inputDataKRS();
                     break;
                 case 3:
-                    header_editDataKRS();
-                    System.out.print("Masukkan NIM\t\t: ");
-                    nimMhs = IN.next();
-                    if (indeksMahasiswa(nimMhs) == MAX_MHS) {
-                        System.out.println("NIM tidak ditemukan, silahkan input data mahasiswa terlebih dahulu");
-                        System.out.println("Saran: Pilih [1] pada menu dan input data mahasiswa");
-                        footer_bold();
-                        break;
-                    }
-                    System.out.print("Masukkan semester\t: ");
-                    sem = IN.next();
-                    if (kodeMatkul[indeksMahasiswa(nimMhs)][semester(sem)][0] == null) {
-                        System.out.println("Data KRS tidak ditemukan, silahkan input data KRS terlebih dahulu");
-                        System.out.println("Saran: Pilih [2] pada menu dan input data KRS");
-                        footer_bold();
-                        break;
-                    }
-                    System.out.print("Masukkan kode mata kuliah yang ingin diubah\t: ");
-                    kodeMK = IN.next();
-                    if (indeksMatkul(indeksMahasiswa(nimMhs), semester(sem), kodeMK) == MAX_MK) {
-                        System.out.println("Mata kuliah tidak ditemukan, periksa kembali kode mata kuliah yang diinput");
-                        footer_bold();
-                        break;
-                    } 
-                    IN.nextLine();
-                    separator();
-                    editDataKRS(indeksMahasiswa(nimMhs), semester(sem), indeksMatkul(indeksMahasiswa(nimMhs), semester(sem), kodeMK));
-                    footer_bold();
+                    editDataKRS();
                     break;
                 case 4:
                     header_inputNilaiMataKuliah();
@@ -251,7 +224,6 @@ public class SIAM {
     }
 
     static void inputNilaiAngka(byte indeksMhs, byte sem) {
-        // menginputkan nilai angka mata kuliah
         for (int i = 0; i < MAX_MK; i++) {
             System.out.printf("   Masukkan nilai mata kuliah %s: ", matkul[indeksMhs][sem][i]);
             nilaiAngka[indeksMhs][sem][i] = IN.nextFloat();
@@ -313,13 +285,27 @@ public class SIAM {
             return 12;
     }
 
-    static boolean cekNIMterinput(String nimMhs){
+    static boolean cekNIMTerinput(String nimMhs){
         boolean terinput = true;
 
-        System.out.print("Masukkan NIM\t\t: ");
         if (indeksMahasiswa(nimMhs) == MAX_MHS) {
             System.out.println("NIM tidak ditemukan, silahkan input data mahasiswa terlebih dahulu");
             System.out.println("Saran: Pilih [1] pada menu dan input data mahasiswa");
+            footer_bold();
+            terinput = false;
+        }
+        return terinput;
+    }
+
+    static boolean cekSemTerinput(String nimMhs, String sem) {
+        byte indeksMhs, indeksSem;
+        boolean terinput = true;
+
+        indeksMhs = indeksMahasiswa(nimMhs);
+        indeksSem = semester(sem);
+        if (kodeMatkul[indeksMhs][indeksSem][0] == null) {
+            System.out.println("Semester tidak ditemukan, silahkan input data terlebih dahulu");
+            System.out.println("Saran: Pilih [2] pada menu dan input data KRS");
             footer_bold();
             terinput = false;
         }
@@ -333,14 +319,16 @@ public class SIAM {
 
         header_inputDataKRS();
 
+        System.out.print("Masukkan NIM\t\t: ");
         nimMhs = IN.next();
-        nimTerinput = cekNIMterinput(nimMhs);
+        nimTerinput = cekNIMTerinput(nimMhs);
 
         if (nimTerinput) {
-            semTerinput = false;
             System.out.print("Masukkan semester\t: ");
             sem = IN.next();
             IN.nextLine();
+
+            semTerinput = false;
             if (kodeMatkul[indeksMahasiswa(nimMhs)][semester(sem)][0] != null) {
                 System.out.println("Data mahasiswa sudah diinput, tindakan ini dapat menyebabkan overwrite");
                 System.out.println("Saran: Pilih [3] untuk mengedit data KRS");
@@ -367,14 +355,51 @@ public class SIAM {
         }
     }
 
-    static void editDataKRS(byte indeksMhs, byte sem, byte indeksKodeMK) {
-        // mengedit data-data KRS (tugas 7)
-        System.out.printf("   Masukkan kode mata kuliah yang baru\t: ");
-        kodeMatkul[indeksMhs][sem][indeksKodeMK] = IN.nextLine();
-        System.out.printf("   Masukkan nama mata kuliah yang baru\t: ");
-        matkul[indeksMhs][sem][indeksKodeMK] = IN.nextLine();
-        System.out.printf("   Masukkan SKS mata kuliah yang baru\t: ");
-        sks[indeksMhs][sem][indeksKodeMK] = IN.nextByte();
+    static void editDataKRS() {
+        String nimMhs, sem, kodeMK;
+        boolean nimTerinput, semTerinput, kodeMKTerinput;
+        byte indeksMhs, indeksSem, indeksKodeMK;
+
+        header_editDataKRS();
+
+        System.out.print("Masukkan NIM\t\t: ");
+        nimMhs = IN.next();
+        nimTerinput = cekNIMTerinput(nimMhs);
+
+        if (nimTerinput) {
+            System.out.print("Masukkan semester\t: ");
+            sem = IN.next();
+            semTerinput = cekSemTerinput(nimMhs, sem);
+
+            if (nimTerinput && semTerinput) {
+                indeksMhs = indeksMahasiswa(nimMhs);
+                indeksSem = semester(sem);
+
+                System.out.print("Masukkan kode mata kuliah yang ingin diubah\t: ");
+                kodeMK = IN.next();
+                IN.nextLine();
+
+                indeksKodeMK = indeksMatkul(indeksMhs, indeksSem, kodeMK);
+                kodeMKTerinput = true;
+                if (indeksMatkul(indeksMahasiswa(nimMhs), semester(sem), kodeMK) == MAX_MK) {
+                    System.out.println("Mata kuliah tidak ditemukan, periksa kembali kode mata kuliah yang diinput");
+                    footer_bold();
+                    kodeMKTerinput = false;
+                } 
+
+                if (nimTerinput && semTerinput && kodeMKTerinput) {
+                    separator();
+                    System.out.printf("   Masukkan kode mata kuliah yang baru\t: ");
+                    kodeMatkul[indeksMhs][indeksSem][indeksKodeMK] = IN.nextLine();
+                    System.out.printf("   Masukkan nama mata kuliah yang baru\t: ");
+                    matkul[indeksMhs][indeksSem][indeksKodeMK] = IN.nextLine();
+                    System.out.printf("   Masukkan SKS mata kuliah yang baru\t: ");
+                    sks[indeksMhs][indeksSem][indeksKodeMK] = IN.nextByte();
+
+                    footer_bold();
+                }
+            }
+        }
     }
 
     static void cetakKRS(byte indeksMhs, byte sem) {
