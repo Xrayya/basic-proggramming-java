@@ -245,10 +245,8 @@ public class SIAM {
         nimTerinput = cekNIMTerinput(nimMhs);
 
         if (nimTerinput) {
-            System.out.println("init1");
             System.out.print("Masukkan semester\t: ");
             sem = IN.next();
-            System.out.println("init2");
 
             indeksMhs = indeksMahasiswa(nimMhs);
             indeksSem = semester(sem);
@@ -259,10 +257,8 @@ public class SIAM {
                 System.out.println("Saran: Pilih [2] pada menu dan input data KRS");
                 footer_bold();
                 semTerinput = false;
-                System.out.println("b");
             } else {
                 semTerinput = true;
-                System.out.println("a");
             }
 
             if (semTerinput) {
@@ -473,11 +469,21 @@ public class SIAM {
         if (nimTerinput) {
             System.out.print("Masukkan semester\t: ");
             sem = IN.next();
-            semTerinput = cekSemTerinput(nimMhs, sem);
+
+            indeksMhs = indeksMahasiswa(nimMhs);
+            indeksSem = semester(sem);
+
+            if (nilaiAngka[indeksMhs][indeksSem][0] == 0) {
+                System.out.print("Nilai mata kuliah tidak ditemukan, ");
+                System.out.println("silahkan input nilai terlebih dahulu");
+                System.out.println("Saran: Pilih [4] pada menu dan input nilai mata kuliah");
+                footer_bold();
+                semTerinput = false;
+            } else {
+                semTerinput = true;
+            }
 
             if (nimTerinput && semTerinput) {
-                indeksMhs = indeksMahasiswa(nimMhs);
-                indeksSem = semester(sem);
                 
                 String semester;
                 if (indeksSem == 0) {
