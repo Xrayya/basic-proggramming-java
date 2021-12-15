@@ -3,8 +3,8 @@ package Pemdas.UTS;
 import java.util.Scanner;
 
 public class Kalkulator2Switch {
-    public static void main(String[] args) {
 
+    public static void main(String[] args) {
         // ===========================
         // Kalkulator v2.a
         // Oleh Azhary Munir Abdillah
@@ -19,7 +19,12 @@ public class Kalkulator2Switch {
         System.out.println("*************\n");
 
         System.out.println(
-                "Menu operasi:\n" + "1. Penjumlahan\n" + "2. Pengurangan\n" + "3. Perkalian\n" + "4. Pembagian\n");
+            "Menu operasi:\n" +
+            "1. Penjumlahan\n" +
+            "2. Pengurangan\n" +
+            "3. Perkalian\n" +
+            "4. Pembagian\n"
+        );
 
         System.out.printf("Pilih operasi: ");
         operasi = in.nextInt();

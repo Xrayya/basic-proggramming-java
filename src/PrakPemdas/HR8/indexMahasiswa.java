@@ -3,21 +3,22 @@ package PrakPemdas.HR8;
 import java.util.Scanner;
 
 public class indexMahasiswa {
+
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         String nama[], fakultas[], jurusan[], angkatan[], perintah1, perintah2;
         int banyakData, dataDitemukan;
 
         banyakData = in.nextInt();
-        nama     = new String[banyakData];
+        nama = new String[banyakData];
         fakultas = new String[banyakData];
-        jurusan  = new String[banyakData];
+        jurusan = new String[banyakData];
         angkatan = new String[banyakData];
 
         for (int i = 0; i < banyakData; i++) {
-            nama[i]     = in.next();
+            nama[i] = in.next();
             fakultas[i] = in.next().toLowerCase();
-            jurusan[i]  = in.next().toLowerCase();
+            jurusan[i] = in.next().toLowerCase();
             angkatan[i] = in.next().toLowerCase();
         }
 

@@ -3,6 +3,7 @@ package PrakPemdas.HR6;
 import java.util.Scanner;
 
 public class prima {
+
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         int nBil, i, bil, faktor;
@@ -16,8 +17,7 @@ public class prima {
             faktor = 0;
 
             for (int j = 1; j <= bil; j++) {
-                if (bil % j == 0)
-                    faktor++;
+                if (bil % j == 0) faktor++;
             }
 
             if (faktor == 2) {

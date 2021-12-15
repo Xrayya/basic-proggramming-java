@@ -3,6 +3,7 @@ package PrakPemdas.HR3;
 import java.util.Scanner;
 
 public class getNIM {
+
     public static void main(String[] args) {
         Scanner io = new Scanner(System.in);
 

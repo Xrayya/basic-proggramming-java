@@ -3,8 +3,8 @@ package Pemdas.UTS;
 import java.util.Scanner;
 
 public class KalkulatorSwitch {
-    public static void main(String[] args) {
 
+    public static void main(String[] args) {
         // ===========================
         // Kalkulator v1.b
         // Oleh Azhary Munir Abdillah

@@ -3,6 +3,7 @@ package Pemdas.tgl8Nov;
 import java.util.Scanner;
 
 public class mainBilv11 {
+
     public static void main(String[] args) {
         // ===========================
         // Main Bilangan v1.1
@@ -27,7 +28,8 @@ public class mainBilv11 {
             bil = in.nextInt();
             System.out.println("Ingin bermain lagi?");
             System.out.print(
-                    "(masukkan huruf ‘y’ (tanpa tanda kutip) jika setuju, atau huruf lainnya jika tidak setuju): ");
+                "(masukkan huruf ‘y’ (tanpa tanda kutip) jika setuju, atau huruf lainnya jika tidak setuju): "
+            );
             lagi = in.next().charAt(0);
 
             jumlah += bil;
@@ -41,7 +43,9 @@ public class mainBilv11 {
         } while (lagi == 'y');
 
         System.out.println("\nJumlah nilai seluruh bilangan: " + jumlah);
-        System.out.println("Nilai rata-rata dari seluruh bilangan: " + (jumlah / banyakData));
+        System.out.println(
+            "Nilai rata-rata dari seluruh bilangan: " + (jumlah / banyakData)
+        );
         System.out.println("Nilai terbesar: " + terbesar);
         System.out.println("Nilai terkecil: " + terkecil);
         in.close();

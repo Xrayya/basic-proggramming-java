@@ -3,6 +3,7 @@ package Pemdas.tgl8Nov;
 import java.util.Scanner;
 
 public class mainBilv21a {
+
     public static void main(String[] args) {
         // ===========================
         // Main Bilangan v2.1.a
@@ -30,9 +31,13 @@ public class mainBilv21a {
                 System.out.print(i);
                 if (i == bilFavorit) {
                     if (bilFavorit % 2 == 0) {
-                        System.out.println(" – bilangan favorit adalah bilangan genap");
+                        System.out.println(
+                            " – bilangan favorit adalah bilangan genap"
+                        );
                     } else {
-                        System.out.println(" – bilangan favorit adalah bilangan ganjil");
+                        System.out.println(
+                            " – bilangan favorit adalah bilangan ganjil"
+                        );
                     }
                 } else {
                     System.out.println();
@@ -44,9 +49,13 @@ public class mainBilv21a {
                 System.out.print(i);
                 if (i == bilFavorit) {
                     if (bilFavorit % 2 == 0) {
-                        System.out.println(" – bilangan favorit adalah bilangan genap");
+                        System.out.println(
+                            " – bilangan favorit adalah bilangan genap"
+                        );
                     } else {
-                        System.out.println(" – bilangan favorit adalah bilangan ganjil");
+                        System.out.println(
+                            " – bilangan favorit adalah bilangan ganjil"
+                        );
                     }
                 } else {
                     System.out.println();
@@ -55,7 +64,12 @@ public class mainBilv21a {
             }
         }
 
-        System.out.printf("\nTerima kasih, anda telah bermain dengan bilangan %d, %d, dan %d.", bil1, bil2, bilFavorit);
+        System.out.printf(
+            "\nTerima kasih, anda telah bermain dengan bilangan %d, %d, dan %d.",
+            bil1,
+            bil2,
+            bilFavorit
+        );
         in.close();
     }
 }

@@ -3,6 +3,7 @@ package PrakPemdas.HR3;
 import java.util.Scanner;
 
 public class informasiAkademik2 {
+
     public static void main(String[] args) {
         Scanner io = new Scanner(System.in);
 
@@ -14,7 +15,8 @@ public class informasiAkademik2 {
         keaktifan = io.nextDouble();
         io.close();
 
-        nilaiakhir = 0.1 * tugas + 0.2 * kuis + 0.3 * uts + 0.3 * uas + 0.1 * keaktifan;
+        nilaiakhir =
+            0.1 * tugas + 0.2 * kuis + 0.3 * uts + 0.3 * uas + 0.1 * keaktifan;
 
         if (nilaiakhir > 80 && nilaiakhir <= 100) {
             System.out.println("Huruf Mutu : A");

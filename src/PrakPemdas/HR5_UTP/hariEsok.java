@@ -3,6 +3,7 @@ package PrakPemdas.HR5_UTP;
 import java.util.Scanner;
 
 public class hariEsok {
+
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         int today, n, nNext;

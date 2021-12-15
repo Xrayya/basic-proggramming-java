@@ -3,11 +3,12 @@ package PrakPemdas.HR10;
 import java.util.Scanner;
 
 public class registerLogin {
+
     static int MAX_SLOT = 5;
 
     static String[] username = new String[MAX_SLOT];
     static String[] password = new String[MAX_SLOT];
-    static String[] name     = new String[MAX_SLOT];
+    static String[] name = new String[MAX_SLOT];
     static int availSlot;
 
     static Scanner in = new Scanner(System.in);
@@ -23,22 +24,22 @@ public class registerLogin {
             availSlot = MAX_SLOT - findEmptyindex();
             menu();
             cmd = in.nextLine();
-                switch (cmd) {
-                    case "1":
-                        if (availSlot != 0) {
-                            register();
-                        } else {
-                            login();
-                        }
-                        break;
-                    case "2":
-                        if (availSlot != 0) {
-                            login();
-                        }
-                        break;
-                    default:
-                        break;
-                }
+            switch (cmd) {
+                case "1":
+                    if (availSlot != 0) {
+                        register();
+                    } else {
+                        login();
+                    }
+                    break;
+                case "2":
+                    if (availSlot != 0) {
+                        login();
+                    }
+                    break;
+                default:
+                    break;
+            }
         } while (!cmd.equals("0"));
     }
 

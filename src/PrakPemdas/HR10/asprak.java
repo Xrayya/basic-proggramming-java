@@ -3,6 +3,7 @@ package PrakPemdas.HR10;
 import java.util.Scanner;
 
 public class asprak {
+
     static String[] nama;
     static float[][] nilai;
     static float[] rerata;
@@ -43,13 +44,21 @@ public class asprak {
     static void cetak() {
         int rerataTertinggi;
         for (int i = 0; i < nama.length; i++) {
-            System.out.printf("Rata-rata nilai mahasiswa %s adalah %.2f\n", nama[i], rerata[i]);
+            System.out.printf(
+                "Rata-rata nilai mahasiswa %s adalah %.2f\n",
+                nama[i],
+                rerata[i]
+            );
         }
 
         System.out.printf("Rata-rata kelas: %.2f\n", mean(rerata));
 
         rerataTertinggi = indeksRerataTertinggi(rerata);
-        System.out.printf("Mahasiswa yang memiliki nilai tertinggi adalah %s dengan nilai %.2f", nama[rerataTertinggi], rerata[rerataTertinggi]);
+        System.out.printf(
+            "Mahasiswa yang memiliki nilai tertinggi adalah %s dengan nilai %.2f",
+            nama[rerataTertinggi],
+            rerata[rerataTertinggi]
+        );
     }
 
     static float mean(float[] nilai) {

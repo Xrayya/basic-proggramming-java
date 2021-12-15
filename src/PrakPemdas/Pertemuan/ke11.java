@@ -7,6 +7,7 @@ package PrakPemdas.Pertemuan;
 import java.util.Scanner;
 
 public class ke11 {
+
     static int a;
 
     public static void main(String[] args) {

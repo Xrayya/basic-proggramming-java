@@ -3,6 +3,7 @@ package PrakPemdas.HR2;
 import java.util.*;
 
 public class Main {
+
     public static void main(String[] args) {
         Scanner io = new Scanner(System.in);
 

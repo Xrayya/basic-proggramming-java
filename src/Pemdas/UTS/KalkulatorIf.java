@@ -3,8 +3,8 @@ package Pemdas.UTS;
 import java.util.Scanner;
 
 public class KalkulatorIf {
-    public static void main(String[] args) {
 
+    public static void main(String[] args) {
         // ===========================
         // Kalkulator v1.a
         // Oleh Azhary Munir Abdillah

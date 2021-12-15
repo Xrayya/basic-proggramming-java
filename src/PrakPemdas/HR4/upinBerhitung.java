@@ -3,6 +3,7 @@ package PrakPemdas.HR4;
 import java.util.Scanner;
 
 public class upinBerhitung {
+
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
 
@@ -51,8 +52,7 @@ public class upinBerhitung {
             }
             switch (n.charAt(index)) {
                 case '0':
-                    if (n.charAt(++index) == '1')
-                        System.out.print("satu");
+                    if (n.charAt(++index) == '1') System.out.print("satu");
                     break;
                 case '1':
                     switch (n.charAt(++index)) {
@@ -62,7 +62,6 @@ public class upinBerhitung {
                         case '1':
                             System.out.print("sebelas");
                             break;
-
                         default:
                             break;
                     }
@@ -105,12 +104,10 @@ public class upinBerhitung {
             }
             switch (n.charAt(index)) {
                 case '0':
-                    if (index == 0)
-                        System.out.print("nol");
+                    if (index == 0) System.out.print("nol");
                     break;
                 case '1':
-                    if (index == 0)
-                        System.out.print("satu");
+                    if (index == 0) System.out.print("satu");
                     break;
                 case '2':
                     System.out.print("dua");

@@ -3,6 +3,7 @@ package PrakPemdas.HR8;
 import java.util.Scanner;
 
 public class pecahan {
+
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         String num;
@@ -11,7 +12,7 @@ public class pecahan {
 
         num = in.nextLine();
         int c;
-        
+
         // Memisahkan bil. bulat, pembilang, dan penyebut dari input
         if (num.indexOf('.') != -1) {
             // Desimal
@@ -26,14 +27,27 @@ public class pecahan {
         } else if (num.indexOf('/') != -1 && num.indexOf(' ') != -1) {
             // Pecahan campuran
             bilBul = Integer.parseInt(num.substring(0, num.indexOf(' ')));
-            penyebut = Integer.parseInt(num.substring(num.indexOf('/') + 1, num.length()));
-            pembilang = Integer.parseInt(num.substring(num.indexOf(' ') + 1, num.indexOf('/'))) * bilBul / Math.abs(bilBul) + bilBul * penyebut;
+            penyebut =
+                Integer.parseInt(
+                    num.substring(num.indexOf('/') + 1, num.length())
+                );
+            pembilang =
+                Integer.parseInt(
+                    num.substring(num.indexOf(' ') + 1, num.indexOf('/'))
+                ) *
+                bilBul /
+                Math.abs(bilBul) +
+                bilBul *
+                penyebut;
             bilBul = 0;
         } else if (num.indexOf('/') != -1) {
             // Pecahan
             bilBul = 0;
-            pembilang = Integer.parseInt(num.substring(0 , num.indexOf('/')));
-            penyebut = Integer.parseInt(num.substring(num.indexOf('/') + 1, num.length()));
+            pembilang = Integer.parseInt(num.substring(0, num.indexOf('/')));
+            penyebut =
+                Integer.parseInt(
+                    num.substring(num.indexOf('/') + 1, num.length())
+                );
         } else {
             // Bulat
             bilBul = (int) Integer.parseInt(num);
@@ -44,10 +58,10 @@ public class pecahan {
         // Penyederhanaan pecahan
         bil = 0;
         if (pembilang % penyebut == 0 && pembilang != 0) {
-          bil += pembilang / penyebut;
-          bilBul += pembilang / penyebut;
-          pembilang = 0;
-          penyebut = 1;
+            bil += pembilang / penyebut;
+            bilBul += pembilang / penyebut;
+            pembilang = 0;
+            penyebut = 1;
         }
         if (Math.abs(pembilang) > penyebut) {
             bilBul += pembilang / penyebut;
@@ -79,7 +93,14 @@ public class pecahan {
         } else if (bilBul == 0) {
             System.out.println(pembilang + "/" + penyebut);
         } else {
-            System.out.println(bilBul + " " + pembilang * (bilBul / Math.abs(bilBul)) + "/" + penyebut);
+            System.out.println(
+                bilBul +
+                " " +
+                pembilang *
+                (bilBul / Math.abs(bilBul)) +
+                "/" +
+                penyebut
+            );
         }
         System.out.printf("Pecahan: ");
         if (bil != 0) {

@@ -3,6 +3,7 @@ package Pemdas.tgl22Nov;
 import java.util.Scanner;
 
 public class Pertemuan {
+
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         double luas;
@@ -24,7 +25,6 @@ public class Pertemuan {
         return 3.14 * radius * radius;
     }
 }
-
 // Class adalah objek
 // objek berisi method
 // pada OOP, setiap objek saling bekerja sama dalam memecahkan suatu masalah

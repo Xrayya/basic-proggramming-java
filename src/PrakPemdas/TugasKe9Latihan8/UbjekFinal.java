@@ -3,6 +3,7 @@ package PrakPemdas.TugasKe9Latihan8;
 import java.util.Scanner;
 
 public class UbjekFinal {
+
     static int nDriver;
     static int nRoute;
 
@@ -30,7 +31,9 @@ public class UbjekFinal {
     static void input() {
         System.out.print("Masukkan nama penumpang\t\t\t\t\t: ");
         costumerName = in.nextLine();
-        System.out.print("Masukkan titik koordinat penumpang (x <spasi> y)\t: ");
+        System.out.print(
+            "Masukkan titik koordinat penumpang (x <spasi> y)\t: "
+        );
         costumerPos[0] = in.nextDouble();
         costumerPos[1] = in.nextDouble();
         System.out.print("Masukkan titik koordinat tujuan (x <spasi> y)\t\t: ");
@@ -49,7 +52,10 @@ public class UbjekFinal {
         for (int i = 0; i < nDriver; i++) {
             System.out.printf("Masukkan nama pengemudi ke-%d\t\t\t\t: ", i + 1);
             driverName[i] = in.nextLine();
-            System.out.printf("Masukkan koordinat pengemudi ke-%d (x <spasi> y)\t\t: ", i + 1);
+            System.out.printf(
+                "Masukkan koordinat pengemudi ke-%d (x <spasi> y)\t\t: ",
+                i + 1
+            );
             driverPos[i][0] = in.nextDouble();
             driverPos[i][1] = in.nextDouble();
             in.nextLine();
@@ -64,27 +70,34 @@ public class UbjekFinal {
         // memudahkan saat pemanggilan method findNearestPointIndex
 
         for (int i = 0; i < nRoute; i++) {
-            System.out.printf("Masukkan koordinat rute %d titik 1 (x <spasi> y)\t\t: ", i + 1);
+            System.out.printf(
+                "Masukkan koordinat rute %d titik 1 (x <spasi> y)\t\t: ",
+                i + 1
+            );
             route[0][i][0] = in.nextDouble();
             route[0][i][1] = in.nextDouble();
-            System.out.printf("Masukkan koordinat rute %d titik 2 (x <spasi> y)\t\t: ", i + 1);
+            System.out.printf(
+                "Masukkan koordinat rute %d titik 2 (x <spasi> y)\t\t: ",
+                i + 1
+            );
             route[1][i][0] = in.nextDouble();
             route[1][i][1] = in.nextDouble();
         }
     }
-    
+
     static void process() {
         int RouteIndexOfPoint2, RouteIndexOfPoint3;
 
         nearestDriverIndex = findNextNearestPointIndex(costumerPos, driverPos);
 
         pointChar[0] = 'P';
-        
+
         // menghitung jarak dari titik 1 ke titik 2
         RouteIndexOfPoint2 = findNextNearestPointIndex(costumerPos, route[0]);
         pointChar[1] = (char) (65 + (RouteIndexOfPoint2) * 2); // (char) 65 = 'A'
         // menghitung jarak dari titik 2 ke titik 3
-        RouteIndexOfPoint3 = findNextNearestPointIndex(route[0][RouteIndexOfPoint2], route[1]);
+        RouteIndexOfPoint3 =
+            findNextNearestPointIndex(route[0][RouteIndexOfPoint2], route[1]);
         pointChar[2] = (char) (66 + (RouteIndexOfPoint3) * 2);
         // menghitung jarak dari titik 3 ke titik 4
         pointChar[3] = 'X';
@@ -95,9 +108,14 @@ public class UbjekFinal {
 
         header_output();
 
-        nearestDriverDist = calcDistance(costumerPos, driverPos[nearestDriverIndex]);
-        System.out.printf("Pengemudi %s adalah yang terdekat dengan %s dengan jarak %.2f km\n",
-                driverName[nearestDriverIndex], costumerName, nearestDriverDist);
+        nearestDriverDist =
+            calcDistance(costumerPos, driverPos[nearestDriverIndex]);
+        System.out.printf(
+            "Pengemudi %s adalah yang terdekat dengan %s dengan jarak %.2f km\n",
+            driverName[nearestDriverIndex],
+            costumerName,
+            nearestDriverDist
+        );
 
         System.out.printf("Rute terdekat yang ditempuh: ");
         for (char c : pointChar) {
@@ -110,7 +128,10 @@ public class UbjekFinal {
         System.out.println();
     }
 
-    static int findNextNearestPointIndex(double[] startingPoint, double[][] aimPoint) {
+    static int findNextNearestPointIndex(
+        double[] startingPoint,
+        double[][] aimPoint
+    ) {
         double dist, temp;
         int index;
 
@@ -127,28 +148,53 @@ public class UbjekFinal {
     }
 
     static double calcDistance(double[] point1, double[] point2) {
-        return (Math.sqrt(Math.pow((point2[0] - point1[0]), 2) + Math.pow((point2[1] - point1[1]), 2)));
+        return (
+            Math.sqrt(
+                Math.pow((point2[0] - point1[0]), 2) +
+                Math.pow((point2[1] - point1[1]), 2)
+            )
+        );
     }
 
     static void header_app() {
-        System.out.println("===========================================================================");
-        System.out.println("                           PROGRAM UB-JEK FINAL                            ");
-        System.out.println("===========================================================================");
+        System.out.println(
+            "==========================================================================="
+        );
+        System.out.println(
+            "                           PROGRAM UB-JEK FINAL                            "
+        );
+        System.out.println(
+            "==========================================================================="
+        );
     }
 
     static void header_output() {
-        System.out.println("===========================================================================");
-        System.out.println("                             Hasil Perhitungan                             ");
-        System.out.println("---------------------------------------------------------------------------");
+        System.out.println(
+            "==========================================================================="
+        );
+        System.out.println(
+            "                             Hasil Perhitungan                             "
+        );
+        System.out.println(
+            "---------------------------------------------------------------------------"
+        );
     }
 
     static void footer() {
-        System.out.println("===========================================================================");
-        System.out.println("                   copyright Praktikum Pemdas SI-B 2021                    ");
-        System.out.println("===========================================================================");
+        System.out.println(
+            "==========================================================================="
+        );
+        System.out.println(
+            "                   copyright Praktikum Pemdas SI-B 2021                    "
+        );
+        System.out.println(
+            "==========================================================================="
+        );
     }
 
     static void inSectionSeparator() {
-        System.out.println("---------------------------------------------------------------------------");
+        System.out.println(
+            "---------------------------------------------------------------------------"
+        );
     }
 }

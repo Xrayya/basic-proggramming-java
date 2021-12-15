@@ -3,6 +3,7 @@ package HRCoba2.FirstLevel;
 import java.util.Scanner;
 
 public class loop2 {
+
     public static void main(String[] args) {
         Scanner io = new Scanner(System.in);
 
@@ -10,7 +11,6 @@ public class loop2 {
 
         q = io.nextInt();
         for (int i = 1; i <= q; i++) {
-
             a = io.nextInt();
             b = io.nextInt();
             n = io.nextInt();

@@ -3,6 +3,7 @@ package HRCoba2.FirstLevel;
 import java.util.Scanner;
 
 public class intToString {
+
     public static void main(String[] args) {
         Scanner io = new Scanner(System.in);
 

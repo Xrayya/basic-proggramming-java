@@ -3,6 +3,7 @@ package Pemdas.tgl15Nov;
 import java.util.Scanner;
 
 public class no5 {
+
     public static void main(String[] args) {
         // ===========================
         // Semua Tak Sama v1.0
@@ -18,7 +19,9 @@ public class no5 {
         System.out.println("v1.0");
         System.out.println("******************");
 
-        System.out.print("\nBerapa banyaknya bilangan dalam daftar bilangan?  ");
+        System.out.print(
+            "\nBerapa banyaknya bilangan dalam daftar bilangan?  "
+        );
         banyakBilangan = in.nextInt();
         nilai = new String[banyakBilangan];
 
@@ -31,7 +34,10 @@ public class no5 {
         System.out.print("\nDaftar bilangan:");
         for (int i = 0; i < nilai.length; i++) {
             System.out.print("\n  Bilangan ke-" + (i + 1) + ": ");
-            if (Math.round(Double.parseDouble(nilai[i])) != Double.parseDouble(nilai[i])) {
+            if (
+                Math.round(Double.parseDouble(nilai[i])) !=
+                Double.parseDouble(nilai[i])
+            ) {
                 System.out.print(Double.parseDouble(nilai[i]) * (2 * i + 1));
             } else {
                 System.out.print(Integer.parseInt(nilai[i]) * (2 * i + 1));

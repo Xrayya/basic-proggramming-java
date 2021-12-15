@@ -8,7 +8,9 @@ public class staticInitializerBlock {
         if (b > 0 && h > 0) {
             System.out.println(b * h);
         } else {
-            System.out.println("java.lang.Exception: Breadth and height must be positive");
+            System.out.println(
+                "java.lang.Exception: Breadth and height must be positive"
+            );
         }
     }
 

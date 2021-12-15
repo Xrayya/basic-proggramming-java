@@ -3,6 +3,7 @@ package PrakPemdas.HR5;
 import java.util.Scanner;
 
 public class investasi {
+
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         double modal, tahun, persen, keuntungan, hasil;

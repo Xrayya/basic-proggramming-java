@@ -3,6 +3,7 @@ package Pemdas.tgl8Nov;
 import java.util.Scanner;
 
 public class mainBilv22a {
+
     public static void main(String[] args) {
         // ===========================
         // Main Bilangan v2.2.a
@@ -34,9 +35,13 @@ public class mainBilv22a {
                 System.out.print(i);
                 if (i == bilFavorit) {
                     if (bilFavorit % 2 == 0) {
-                        System.out.println(" – bilangan favorit adalah bilangan genap");
+                        System.out.println(
+                            " – bilangan favorit adalah bilangan genap"
+                        );
                     } else {
-                        System.out.println(" – bilangan favorit adalah bilangan ganjil");
+                        System.out.println(
+                            " – bilangan favorit adalah bilangan ganjil"
+                        );
                     }
                 } else {
                     System.out.println();
@@ -50,9 +55,13 @@ public class mainBilv22a {
                 System.out.print(i);
                 if (i == bilFavorit) {
                     if (bilFavorit % 2 == 0) {
-                        System.out.println(" – bilangan favorit adalah bilangan genap");
+                        System.out.println(
+                            " – bilangan favorit adalah bilangan genap"
+                        );
                     } else {
-                        System.out.println(" – bilangan favorit adalah bilangan ganjil");
+                        System.out.println(
+                            " – bilangan favorit adalah bilangan ganjil"
+                        );
                     }
                 } else {
                     System.out.println();
@@ -60,8 +69,13 @@ public class mainBilv22a {
             }
         }
 
-        System.out.printf("\nTerima kasih, anda telah bermain dengan bilangan %d, %d, %d, dan %d.", bil1, bil2,
-                bilFavorit, bilTerlarang);
+        System.out.printf(
+            "\nTerima kasih, anda telah bermain dengan bilangan %d, %d, %d, dan %d.",
+            bil1,
+            bil2,
+            bilFavorit,
+            bilTerlarang
+        );
         in.close();
     }
 }

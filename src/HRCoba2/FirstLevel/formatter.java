@@ -3,6 +3,7 @@ package HRCoba2.FirstLevel;
 import java.util.Scanner;
 
 public class formatter {
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 

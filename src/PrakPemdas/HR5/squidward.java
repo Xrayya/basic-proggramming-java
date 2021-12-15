@@ -3,6 +3,7 @@ package PrakPemdas.HR5;
 import java.util.Scanner;
 
 public class squidward {
+
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         int order, jumlah, biaya, uang;
@@ -20,8 +21,7 @@ public class squidward {
         do {
             System.out.println("Pilih order dan masukkan jumlah: ");
             order = in.nextInt();
-            if (order >= 1 && order <= 4)
-                jumlah = in.nextInt();
+            if (order >= 1 && order <= 4) jumlah = in.nextInt();
 
             switch (order) {
                 case 1:
@@ -53,8 +53,7 @@ public class squidward {
         do {
             System.out.println("Pilih order dan masukkan jumlah: ");
             order = in.nextInt();
-            if (order >= 1 && order <= 3)
-                jumlah = in.nextInt();
+            if (order >= 1 && order <= 3) jumlah = in.nextInt();
 
             switch (order) {
                 case 1:
@@ -78,13 +77,16 @@ public class squidward {
         System.out.println("Masukkan uang untuk membayar: ");
         uang = in.nextInt();
         while (uang < biaya) {
-            System.out.println("Uang yang dimasukkan kurang " + (biaya - uang) + ". Masukkan uang lagi: ");
+            System.out.println(
+                "Uang yang dimasukkan kurang " +
+                (biaya - uang) +
+                ". Masukkan uang lagi: "
+            );
             uang += in.nextInt();
         }
         in.close();
 
-        if (uang != biaya)
-            System.out.println("Kembalian: " + (uang - biaya));
+        if (uang != biaya) System.out.println("Kembalian: " + (uang - biaya));
         System.out.println("Terima kasih sudah belanja di Krusty Krab!");
     }
 }

@@ -1,7 +1,8 @@
 package PrakPemdas.Pertemuan;
 
 public class Sorting {
-    public static int[] bubble (int[] arr) {
+
+    public static int[] bubble(int[] arr) {
         int[] hasilUrut = arr;
         for (int i = 0; i < hasilUrut.length - 1; i++) {
             boolean swaped = false;

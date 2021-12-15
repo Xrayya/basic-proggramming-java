@@ -3,6 +3,7 @@ package Pemdas.tgl25;
 import java.util.Scanner;
 
 public class v1 {
+
     public static void main(String[] args) {
         // ===========================
         // Main Bilangan v1.0
@@ -12,7 +13,9 @@ public class v1 {
         Scanner in = new Scanner(System.in);
         int bil, pengulangan;
 
-        System.out.println("****************\n" + "Main Bilangan v1.0\n" + "****************\n");
+        System.out.println(
+            "****************\n" + "Main Bilangan v1.0\n" + "****************\n"
+        );
 
         System.out.print("Masukkan sebuah bilangan bulat: ");
         bil = in.nextInt();

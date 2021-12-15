@@ -1,6 +1,7 @@
 package PrakPemdas.Pertemuan;
 
 public class Rekursif {
+
     static long jumlahSemuaDigit(long input) {
         long jumlah = 0;
 
