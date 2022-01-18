@@ -43,21 +43,21 @@ public class Player {
 // Code in python3
 // lx,ly,tx,ty=[int(i) for i in input().split()]
 // while True:
-//     input()
-//     if ty>ly:
-//         y="N"
-//         ty-=1
-//     elif ty<ly:
-//         y="S"
-//         ty+=1
-//     else:
-//         y=""
-//     if tx>lx:
-//         x="W"
-//         tx-=1
-//     elif tx<lx:
-//         x="E"
-//         tx+=1
-//     else:
-//         x=""
-//     print("%s%s"%(y,x))
+// input()
+// if ty>ly:
+// y="N"
+// ty-=1
+// elif ty<ly:
+// y="S"
+// ty+=1
+// else:
+// y=""
+// if tx>lx:
+// x="W"
+// tx-=1
+// elif tx<lx:
+// x="E"
+// tx+=1
+// else:
+// x=""
+// print("%s%s"%(y,x))
