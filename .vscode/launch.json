@@ -6,6 +6,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch WordCounter",
+            "request": "launch",
+            "mainClass": "Edabit.WordCounter",
+            "projectName": "basic-proggramming-java_1ae2a5f5"
+        },
+        {
+            "type": "java",
+            "name": "Launch True",
+            "request": "launch",
+            "mainClass": "Edabit.True",
+            "projectName": "basic-proggramming-java_1ae2a5f5"
+        },
+        {
+            "type": "java",
+            "name": "Launch ddd",
+            "request": "launch",
+            "mainClass": "Eksperimen.Speedrun.ddd",
+            "projectName": "basic-proggramming-java_1ae2a5f5"
+        },
+        {
+            "type": "java",
+            "name": "Launch offsetArray",
+            "request": "launch",
+            "mainClass": "Codingame.offsetArray",
+            "projectName": "basic-proggramming-java_1ae2a5f5"
+        },
+        {
+            "type": "java",
             "name": "Launch java",
             "request": "launch",
             "mainClass": "bullet.java",
