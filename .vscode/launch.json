@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch BasicCalculator",
+            "request": "launch",
+            "mainClass": "Edabit.BasicCalculator",
+            "projectName": "basic-proggramming-java_1ae2a5f5"
+        },
+        {
+            "type": "java",
+            "name": "Launch TriangularNumSeq",
+            "request": "launch",
+            "mainClass": "Edabit.TriangularNumSeq",
+            "projectName": "basic-proggramming-java_1ae2a5f5"
+        },
+        {
+            "type": "java",
+            "name": "Launch EndingMatch",
+            "request": "launch",
+            "mainClass": "Edabit.EndingMatch",
+            "projectName": "basic-proggramming-java_1ae2a5f5"
+        },
+        {
+            "type": "java",
             "name": "Launch WordCounter",
             "request": "launch",
             "mainClass": "Edabit.WordCounter",
