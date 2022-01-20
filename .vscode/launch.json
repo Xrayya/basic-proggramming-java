@@ -6,6 +6,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch FindTheDiscount",
+            "request": "launch",
+            "mainClass": "Edabit.FindTheDiscount",
+            "projectName": "basic-proggramming-java_1ae2a5f5"
+        },
+        {
+            "type": "java",
+            "name": "Launch ShutteringAsWeSpeak",
+            "request": "launch",
+            "mainClass": "Edabit.ShutteringAsWeSpeak",
+            "projectName": "basic-proggramming-java_1ae2a5f5"
+        },
+        {
+            "type": "java",
+            "name": "Launch ShuffleTheName",
+            "request": "launch",
+            "mainClass": "Edabit.ShuffleTheName",
+            "projectName": "basic-proggramming-java_1ae2a5f5"
+        },
+        {
+            "type": "java",
+            "name": "Launch ExsitNumHigher",
+            "request": "launch",
+            "mainClass": "Edabit.ExsitNumHigher",
+            "projectName": "basic-proggramming-java_1ae2a5f5"
+        },
+        {
+            "type": "java",
             "name": "Launch BasicCalculator",
             "request": "launch",
             "mainClass": "Edabit.BasicCalculator",
