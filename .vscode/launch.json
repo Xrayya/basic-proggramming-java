@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch DifferenceOfMaxMinInArr",
+            "request": "launch",
+            "mainClass": "Edabit.DifferenceOfMaxMinInArr",
+            "projectName": "basic-proggramming-java_1ae2a5f5"
+        },
+        {
+            "type": "java",
+            "name": "Launch ConvenieceStore",
+            "request": "launch",
+            "mainClass": "Edabit.ConvenieceStore",
+            "projectName": "basic-proggramming-java_1ae2a5f5"
+        },
+        {
+            "type": "java",
             "name": "Launch FindTheDiscount",
             "request": "launch",
             "mainClass": "Edabit.FindTheDiscount",
