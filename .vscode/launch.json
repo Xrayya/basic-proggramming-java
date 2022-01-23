@@ -6,6 +6,55 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Recursion_ArraySum",
+            "request": "launch",
+            "mainClass": "Edabit.Recursion_ArraySum",
+            "projectName": "basic-proggramming-java_1ae2a5f5"
+        },
+        {
+            "type": "java",
+            "name": "Launch WarOfNumber",
+            "request": "launch",
+            "mainClass": "Edabit.WarOfNumber",
+            "projectName": "basic-proggramming-java_1ae2a5f5"
+        },
+        {
+            "type": "java",
+            "name": "Launch ArrayOfMultiples",
+            "request": "launch",
+            "mainClass": "Edabit.ArrayOfMultiples",
+            "projectName": "basic-proggramming-java_1ae2a5f5"
+        },
+        {
+            "type": "java",
+            "name": "Launch QuadraticEquationSolution",
+            "request": "launch",
+            "mainClass": "Edabit.QuadraticEquationSolution",
+            "projectName": "basic-proggramming-java_1ae2a5f5"
+        },
+        {
+            "type": "java",
+            "name": "Launch ReverseOrderOfString",
+            "request": "launch",
+            "mainClass": "Edabit.ReverseOrderOfString",
+            "projectName": "basic-proggramming-java_1ae2a5f5"
+        },
+        {
+            "type": "java",
+            "name": "Launch ManyOperators",
+            "request": "launch",
+            "mainClass": "Edabit.ManyOperators",
+            "projectName": "basic-proggramming-java_1ae2a5f5"
+        },
+        {
+            "type": "java",
+            "name": "Launch FindTheBomb",
+            "request": "launch",
+            "mainClass": "Edabit.FindTheBomb",
+            "projectName": "basic-proggramming-java_1ae2a5f5"
+        },
+        {
+            "type": "java",
             "name": "Launch DifferenceOfMaxMinInArr",
             "request": "launch",
             "mainClass": "Edabit.DifferenceOfMaxMinInArr",
