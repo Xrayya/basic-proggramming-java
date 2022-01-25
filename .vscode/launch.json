@@ -6,6 +6,55 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch CalcTheMean",
+            "request": "launch",
+            "mainClass": "Edabit.CalcTheMean",
+            "projectName": "basic-proggramming-java_1ae2a5f5"
+        },
+        {
+            "type": "java",
+            "name": "Launch TheMissingNum",
+            "request": "launch",
+            "mainClass": "Edabit.TheMissingNum",
+            "projectName": "basic-proggramming-java_1ae2a5f5"
+        },
+        {
+            "type": "java",
+            "name": "Launch PentagonalNum",
+            "request": "launch",
+            "mainClass": "Edabit.PentagonalNum",
+            "projectName": "basic-proggramming-java_1ae2a5f5"
+        },
+        {
+            "type": "java",
+            "name": "Launch CrowdedCarriageCapacity",
+            "request": "launch",
+            "mainClass": "Edabit.CrowdedCarriageCapacity",
+            "projectName": "basic-proggramming-java_1ae2a5f5"
+        },
+        {
+            "type": "java",
+            "name": "Launch QuadraticEquation",
+            "request": "launch",
+            "mainClass": "Edabit.QuadraticEquation",
+            "projectName": "basic-proggramming-java_1ae2a5f5"
+        },
+        {
+            "type": "java",
+            "name": "Launch RockPapperScissor",
+            "request": "launch",
+            "mainClass": "Edabit.RockPapperScissor",
+            "projectName": "basic-proggramming-java_1ae2a5f5"
+        },
+        {
+            "type": "java",
+            "name": "Launch TwoSideOfTriangle",
+            "request": "launch",
+            "mainClass": "Edabit.TwoSideOfTriangle",
+            "projectName": "basic-proggramming-java_1ae2a5f5"
+        },
+        {
+            "type": "java",
             "name": "Launch Recursion_ArraySum",
             "request": "launch",
             "mainClass": "Edabit.Recursion_ArraySum",
