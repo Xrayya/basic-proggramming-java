@@ -6,6 +6,69 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch GCD",
+            "request": "launch",
+            "mainClass": "Edabit.GCD",
+            "projectName": "basic-proggramming-java_1ae2a5f5"
+        },
+        {
+            "type": "java",
+            "name": "Launch SplitBasedOnVowelAndConsonants",
+            "request": "launch",
+            "mainClass": "Edabit.SplitBasedOnVowelAndConsonants",
+            "projectName": "basic-proggramming-java_1ae2a5f5"
+        },
+        {
+            "type": "java",
+            "name": "Launch SameNumOfUniqueChar",
+            "request": "launch",
+            "mainClass": "Edabit.SameNumOfUniqueChar",
+            "projectName": "basic-proggramming-java_1ae2a5f5"
+        },
+        {
+            "type": "java",
+            "name": "Launch IsTheStringInOrder",
+            "request": "launch",
+            "mainClass": "Edabit.IsTheStringInOrder",
+            "projectName": "basic-proggramming-java_1ae2a5f5"
+        },
+        {
+            "type": "java",
+            "name": "Launch PerfectNum",
+            "request": "launch",
+            "mainClass": "Edabit.PerfectNum",
+            "projectName": "basic-proggramming-java_1ae2a5f5"
+        },
+        {
+            "type": "java",
+            "name": "Launch PhytagoreanTriplet",
+            "request": "launch",
+            "mainClass": "Edabit.PhytagoreanTriplet",
+            "projectName": "basic-proggramming-java_1ae2a5f5"
+        },
+        {
+            "type": "java",
+            "name": "Launch Switcharoo",
+            "request": "launch",
+            "mainClass": "Edabit.Switcharoo",
+            "projectName": "basic-proggramming-java_1ae2a5f5"
+        },
+        {
+            "type": "java",
+            "name": "Launch EmptySquareSequence",
+            "request": "launch",
+            "mainClass": "Edabit.EmptySquareSequence",
+            "projectName": "basic-proggramming-java_1ae2a5f5"
+        },
+        {
+            "type": "java",
+            "name": "Launch Simple",
+            "request": "launch",
+            "mainClass": "Eksperimen.Simple",
+            "projectName": "basic-proggramming-java_1ae2a5f5"
+        },
+        {
+            "type": "java",
             "name": "Launch CalcTheMean",
             "request": "launch",
             "mainClass": "Edabit.CalcTheMean",
