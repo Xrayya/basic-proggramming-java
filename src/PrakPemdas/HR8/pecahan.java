@@ -11,7 +11,6 @@ public class pecahan {
         double bil;
 
         num = in.nextLine();
-        int c;
 
         // Memisahkan bil. bulat, pembilang, dan penyebut dari input
         if (num.indexOf('.') != -1) {

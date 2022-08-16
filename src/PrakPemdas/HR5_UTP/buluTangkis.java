@@ -37,11 +37,7 @@ public class buluTangkis {
             System.out.println("Toni pergi berlatih");
         } else if (cuaca.equals("hujan")) {
             System.out.println("Toni tidak pergi berlatih");
-        } else if (
-            cuaca.equals("cerah") &&
-            suhu.equals("panas") &&
-            hari.equals("siang")
-        ) {
+        } else if (cuaca.equals("cerah") && suhu.equals("panas") && hari.equals("siang")) {
             System.out.println("Toni tidak pergi berlatih");
         } else if (suhu.equals("sedang") && angin.equals("labil")) {
             System.out.println("Toni pergi berlatih");
